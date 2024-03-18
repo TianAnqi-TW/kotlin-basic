@@ -1,3 +1,4 @@
+import com.thoughtworks.kotlin_basic.util.ConvertUtil
 import com.thoughtworks.kotlin_basic.util.PrintUtil
 
 fun main(args: Array<String>) {
@@ -16,4 +17,12 @@ fun main(args: Array<String>) {
     )
 
     printUtil.printTable(headers, rows)
+
+
+    println("+++++++++++++++++Hello convertion!++++++++++")
+    val convertRes = ConvertUtil()
+    println(convertRes.convert(1,1))
+    println(convertRes.convert(1,2))
+    println(convertRes.convert(26, 3))
+    println(convertRes.convert(701, 5))
 }
