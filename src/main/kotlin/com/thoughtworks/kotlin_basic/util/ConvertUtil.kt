@@ -31,12 +31,8 @@ class ConvertUtil {
 
         var mutableStart = start
         for(i in 0..<size){
-            try{
-                val numToCharRes = getCharRes(mutableStart)
-                resList.add(numToCharRes)
-            } catch (e: IllegalStateException){
-                println(e.message)
-            }
+            val numToCharRes = getCharRes(mutableStart)
+            resList.add(numToCharRes)
             mutableStart++
         }
 
